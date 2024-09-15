@@ -6,7 +6,7 @@ from sklearn.cluster import KMeans
 import os
 
 # Get the directory where this script is located
-dir_path = os.path.dirname(os.path.realpath(_file_))
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
 # Construct the full path to the model file
 model_path = os.path.join(dir_path, 'kmeans_wine_clustering.joblib')
